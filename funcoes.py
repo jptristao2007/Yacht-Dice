@@ -6,3 +6,4 @@ def rolar_dados(n):
         resultados.append(random.randint(1,6))
         i+=1
     return resultados
+
