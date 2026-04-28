@@ -21,3 +21,10 @@ def remover_dado(dados_rolados, dados_no_estoque, dados_para_remover):
     dados_no_estoque_2=dados_no_estoque.copy()
     del dados_no_estoque_2[dados_para_remover]
     return [dados_rolados2, dados_no_estoque_2]
+
+def calcula_pontos_regra_simples(faces):
+    dic={1:0,2:0,3:0,4:0,5:0,6:0}
+    for i in range(len(faces)):
+        if faces[i] in dic.keys():
+            dic[faces[i]]+=faces[i]
+    return dic 
