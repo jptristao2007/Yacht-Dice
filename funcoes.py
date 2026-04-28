@@ -49,3 +49,19 @@ def calcula_pontos_sequencia_alta(faces):
         return 30
     else:
         return 0
+    
+def calcula_pontos_full_house(dados):
+    vezes={1:0,2:0,3:0,4:0,5:0,6:0}
+    for n in dados:
+        vezes[n]+=1
+    if 2 in vezes.values() and 3 in vezes.values():
+        i=0
+        soma=0
+        while i<len(dados):
+            soma+=dados[i]
+            i+=1
+        return soma
+    else:
+        return 0 
+    
+    
