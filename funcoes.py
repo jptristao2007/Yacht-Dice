@@ -80,4 +80,12 @@ def calcula_pontos_quadra (dados):
     
     return 0 
 
+def calcula_pontos_quina(dados):
+    vezes={1:0,2:0,3:0,4:0,5:0,6:0}
+    for n in dados:
+        vezes[n]+=1
+    for v in vezes.values():
+        if v>=5:
+            return 50
+    return 0
         
