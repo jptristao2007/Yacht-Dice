@@ -28,3 +28,8 @@ def calcula_pontos_regra_simples(faces):
         if faces[i] in dic.keys():
             dic[faces[i]]+=faces[i]
     return dic 
+def calcula_pontos_soma(faces):
+    soma_simples=0
+    for numeros in faces:
+        soma_simples+=numeros
+    return soma_simples
