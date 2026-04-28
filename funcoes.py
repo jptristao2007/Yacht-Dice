@@ -63,5 +63,21 @@ def calcula_pontos_full_house(dados):
         return soma
     else:
         return 0 
+
+def calcula_pontos_quadra (dados):
+    vezes={1:0,2:0,3:0,4:0,5:0,6:0}
+    for n in dados:
+        vezes[n]+=1
+    for v in vezes.values():
+
+        if v>=4:
+            i=0
+            soma=0
+            while i<len(dados):
+                soma+=dados[i]
+                i+=1
+            return soma
     
-    
+    return 0 
+
+        
